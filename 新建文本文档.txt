@@ -1,0 +1,19 @@
+git init                                                                  初始化本地git仓库
+git remote add origin 远程仓库链接                       将本地仓库和远程仓库关联
+git push -u origin master                                      本地编辑代码后提交至远程分支
+(第一次使用加上了-u参数，是推送内容并关联分支，之后推送直接使用git push即可，因为第一次已经将当前本地master分支和远程origin的master分支关联了)
+git fetch origin 远程分支名                                    将远程分支拉到本地
+git checkout -b 本地分支名 origin/远程分支名        本地关联远程分支，本地分支名可随意写
+git pull origin                                                       拉取远程分支代码
+
+-d --delete：删除
+-D --delete --force的快捷键
+-f --force：强制
+-m --move：移动或重命名
+-M --move --force的快捷键
+-r --remote：远程
+-a --all：所有
+
+git branch -M main          #将本地仓库默认改为main分支
+
+https://blog.csdn.net/qq_56591814/article/details/119841785
